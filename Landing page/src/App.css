@@ -1,0 +1,257 @@
+html, body {
+  background: #FAFAFA;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Epilogue", sans-serif;
+}
+
+main {
+  height: 100vh;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-items-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-items-container svg {
+  margin-left: 2%;
+  cursor: pointer;
+}
+
+.nav-dropdown-items {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.nav-dropdown-items #nav-list-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  gap: 20px;
+  padding: 0;
+  margin-left: 5%;
+  background: transparent;
+}
+
+.nav-dropdown-items ul li {
+  position: relative;
+}
+
+.nav-dropdown-items ul li a {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-dropdown-items ul li svg {
+  margin-left: 10px;
+  transform: rotate(180deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-dropdown-items ul li:hover a {
+  color: hsl(0, 0%, 8%);
+}
+
+.nav-dropdown-items ul li:hover #arrow {
+  margin-left: 10px;
+  transform: rotate(0deg);
+  fill: hsl(0, 0%, 8%);;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-login-register {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 40%;
+  gap: 20px;
+}
+
+.nav-login-register #login {
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-login-register #login:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.nav-login-register #register {
+  font-weight: 500;
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid hsl(0, 0%, 41%);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.nav-login-register #register:hover {
+  color: hsl(0, 0%, 8%);
+  border: 2px solid hsl(0, 0%, 8%);
+}
+
+.sub-menu-features {
+  position: absolute;
+  width: 150px;
+  display: flex;
+  top: 35px;
+  left: -25px;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.sub-menu-features ul {
+  width: 125px;
+  height: 163px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 1px rgb(221, 221, 221);
+  position: relative;
+  margin: 0;
+  gap: 5px;
+  z-index: 2;
+}
+
+.sub-menu-features ul::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  top: -6px;
+  right: 43%;
+  background: white;
+  z-index: -1;
+}
+
+.sub-menu-features ul::before {
+  position: absolute;
+  content: '';
+  display: block;
+  z-index: 3;
+  width: 125px;
+  height: 40px;
+  top: -25px;
+  background: transparent;
+}
+
+.sub-menu-features ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.sub-menu-features ul li:hover {
+  background: rgb(228, 228, 228);
+}
+
+.sub-menu-features ul li p {
+  margin: 0;
+}
+
+.nav-dropdown-items ul li:hover .sub-menu-features {
+  display: block;
+}
+
+.sub-menu-company {
+  position: absolute;
+  width: 150px;
+  display: flex;
+  top: 35px;
+  left: -25px;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.sub-menu-company ul {
+  width: 125px;
+  height: 120px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 1px rgb(221, 221, 221);
+  position: relative;
+  margin: 0;
+  gap: 5px;
+  z-index: 2;
+}
+
+.sub-menu-company ul::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  top: -6px;
+  right: 43%;
+  background: white;
+  z-index: -1;
+}
+
+.sub-menu-company ul::before {
+  position: absolute;
+  content: '';
+  display: block;
+  z-index: 3;
+  width: 125px;
+  height: 40px;
+  top: -25px;
+  background: transparent;
+}
+
+.sub-menu-company ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.sub-menu-company ul li:hover {
+  background: rgb(228, 228, 228);
+}
+
+.sub-menu-company ul li p {
+  margin: 0;
+  padding-left: 25px
+}
+
+.nav-dropdown-items ul li:hover .sub-menu-company {
+  display: block;
+}
