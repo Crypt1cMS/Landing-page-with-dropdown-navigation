@@ -46,6 +46,7 @@ function App() {
                 </li>
 
                 <li>
+
                   <a href="#">Company
                     <svg  id='arrow' width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" fill="none" d="m1 1 4 4 4-4"/></svg>      
                   </a>
@@ -65,6 +66,7 @@ function App() {
                       </li>
                     </ul>
                   </div>
+
                 </li>
 
                 <li>
