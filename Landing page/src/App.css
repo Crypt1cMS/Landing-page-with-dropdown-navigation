@@ -7,12 +7,11 @@ html, body {
 }
 
 main {
-  height: 100vh;
+  /* height: 100svh; */
 }
 
 nav {
   height: 80px;
-  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -26,6 +25,7 @@ nav {
 .nav-items-container svg {
   margin-left: 2%;
   cursor: pointer;
+  z-index: 1000;
 }
 
 .nav-dropdown-items {
@@ -254,4 +254,91 @@ nav {
 
 .nav-dropdown-items ul li:hover .sub-menu-company {
   display: block;
+}
+
+.main-container {
+  width: auto;
+  display: flex;
+  height: 100%;
+}
+
+.content-left-text {
+  width: 50%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.inner-left-content {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-left-content h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 4.3vw;
+  margin: 0 0 10% 0;
+
+}
+
+.inner-left-content p {
+  width: 85%;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 10% 0;
+
+}
+
+.inner-left-content button {
+  width: 35%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: black;
+  font-family: "Epilogue", sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.inner-left-content button:hover {
+  background: rgb(82, 82, 82);
+}
+
+.collab-logos {
+  display: flex;
+  width: 65%;
+  gap: 35px;
+  position: absolute;
+  bottom: 50px;
+}
+
+.collab-logos svg {
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.collab-logos svg:hover {
+  transform: scale(1.1);
+}
+
+.content-right-image {
+  width: 50%;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-right-image img {
+  width: 60%;
 }
